@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliê Lê Crochê — Peças de crochê feitas à mão</title>
+  <meta name="description" content="Ateliê Lê Crochê: bolsas, roupas, amigurumis e peças para casa em crochê, feitas à mão ponto a ponto." />
+  <link rel="icon" type="image/png" href="assets/novelo.png" />
+  <link rel="apple-touch-icon" href="assets/novelo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,100;1,9..144,300..900,100&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Barra de aviso -->
+  <div class="announce">
+    <div class="announce__track">
+      <span>Frete grátis acima de R$ 299</span><span>✦</span>
+      <span>Cada peça é única e feita à mão</span><span>✦</span>
+      <span>Até 6x sem juros</span><span>✦</span>
+      <span>Encomendas personalizadas pelo WhatsApp</span><span>✦</span>
+      <span>Frete grátis acima de R$ 299</span><span>✦</span>
+      <span>Cada peça é única e feita à mão</span><span>✦</span>
+      <span>Até 6x sem juros</span><span>✦</span>
+      <span>Encomendas personalizadas pelo WhatsApp</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="header" id="header">
+    <nav class="header__nav">
+      <button class="icon-btn menu-toggle" aria-label="Abrir menu" id="menuToggle"><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#colecao">Coleção</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#atelie">O Ateliê</a></li>
+        <li><a href="#encomenda">Sob Encomenda</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="brand" aria-label="Ateliê Lê Crochê — início">
+      <img src="assets/logo.png" alt="Ateliê Lê Crochê" class="brand__logo" />
+    </a>
+
+    <div class="header__actions">
+      <button class="icon-btn" aria-label="Buscar" id="searchBtn">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Favoritos" id="favBtn">
+        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+        <span class="badge" id="favCount">0</span>
+      </button>
+      <button class="icon-btn" aria-label="Sacola" id="cartBtn">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Busca -->
+  <div class="search" id="search">
+    <div class="search__inner">
+      <input type="search" id="searchInput" placeholder="O que você procura? Bolsa, cropped, amigurumi…" />
+      <button class="icon-btn" id="searchClose" aria-label="Fechar busca">✕</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Coleção Primavera · Verão 2027</p>
+        <h1 class="hero__title reveal">
+          <span>Feito à mão,</span>
+          <em>ponto a ponto,</em>
+          <span>para durar.</span>
+        </h1>
+        <p class="hero__lead reveal">Peças de crochê autorais criadas no nosso ateliê com fios naturais, tempo e muito carinho. Nenhuma é igual à outra — assim como você.</p>
+        <div class="hero__cta reveal">
+          <a href="#colecao" class="btn btn--primary">Ver a coleção</a>
+          <a href="#encomenda" class="btn btn--ghost">Criar sob medida</a>
+        </div>
+        <ul class="hero__stats reveal">
+          <li><strong>+1.200</strong><span>peças entregues</span></li>
+          <li><strong>100%</strong><span>algodão &amp; fios naturais</span></li>
+          <li><strong>4,9★</strong><span>avaliação das clientes</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__arch">
+          <img src="img/hero.jpg" alt="Peça de crochê do Ateliê Lê Crochê" fetchpriority="high" data-fallback="hero" />
+        </div>
+        <div class="hero__badge" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circle" textLength="486" lengthAdjust="spacing">feito à mão · com amor · Ateliê Lê Crochê ·</textPath></text>
+          </svg>
+          <span class="hero__badge-core" data-yarn></span>
+        </div>
+        <div class="hero__card">
+          <span class="dot"></span>
+          <div>
+            <strong>Bucket Hat Granny</strong>
+            <small>8 horas de trabalho manual</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faixa marquee -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Bolsas</span><i data-yarn></i><span>Cropped</span><i data-yarn></i><span>Amigurumis</span><i data-yarn></i><span>Casa</span><i data-yarn></i><span>Acessórios</span><i data-yarn></i>
+        <span>Bolsas</span><i data-yarn></i><span>Cropped</span><i data-yarn></i><span>Amigurumis</span><i data-yarn></i><span>Casa</span><i data-yarn></i><span>Acessórios</span><i data-yarn></i>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="section categories" id="categorias">
+      <header class="section__head reveal">
+        <p class="eyebrow">Explore</p>
+        <h2>Encontre a sua <em>peça favorita</em></h2>
+      </header>
+      <div class="categories__grid">
+        <a href="#colecao" class="cat cat--tall reveal" data-filter-link="bolsas">
+          <div class="cat__img"><img src="img/cat-bolsas.jpg" alt="Bolsas de crochê" loading="lazy" decoding="async" data-fallback="bolsas" /></div>
+          <div class="cat__label"><h3>Bolsas</h3><span>Ver peças →</span></div>
+        </a>
+        <a href="#colecao" class="cat reveal" data-filter-link="roupas">
+          <div class="cat__img"><img src="img/cat-roupas.jpg" alt="Roupas de crochê" loading="lazy" decoding="async" data-fallback="roupas" /></div>
+          <div class="cat__label"><h3>Roupas</h3><span>Ver peças →</span></div>
+        </a>
+        <a href="#colecao" class="cat reveal" data-filter-link="amigurumis">
+          <div class="cat__img"><img src="img/cat-amigurumis.jpg" alt="Amigurumis" loading="lazy" decoding="async" data-fallback="amigurumis" /></div>
+          <div class="cat__label"><h3>Amigurumis</h3><span>Ver peças →</span></div>
+        </a>
+        <a href="#colecao" class="cat cat--wide reveal" data-filter-link="casa">
+          <div class="cat__img"><img src="img/cat-casa.jpg" alt="Crochê para casa" loading="lazy" decoding="async" data-fallback="casa" /></div>
+          <div class="cat__label"><h3>Casa &amp; Decoração</h3><span>Ver peças →</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Coleção / Produtos -->
+    <section class="section shop" id="colecao">
+      <header class="section__head section__head--row reveal">
+        <div>
+          <p class="eyebrow">A coleção</p>
+          <h2>Peças que contam <em>histórias</em></h2>
+        </div>
+        <div class="filters" id="filters" role="tablist">
+          <button class="chip is-active" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="bolsas">Bolsas</button>
+          <button class="chip" data-filter="roupas">Roupas</button>
+          <button class="chip" data-filter="amigurumis">Amigurumis</button>
+          <button class="chip" data-filter="casa">Casa</button>
+          <button class="chip" data-filter="acessorios">Acessórios</button>
+        </div>
+      </header>
+      <div class="products" id="products"></div>
+      <p class="empty" id="emptyMsg" hidden>Nenhuma peça encontrada. Que tal uma <a href="#encomenda">encomenda personalizada</a>?</p>
+    </section>
+
+    <!-- Destaque editorial -->
+    <section class="editorial" id="atelie">
+      <div class="editorial__img reveal">
+        <img src="img/atelie.jpg" alt="Mãos fazendo crochê no ateliê" loading="lazy" decoding="async" data-fallback="atelie" />
+        <div class="editorial__stamp">desde<br><strong>2019</strong></div>
+      </div>
+      <div class="editorial__text">
+        <p class="eyebrow reveal">O Ateliê</p>
+        <h2 class="reveal">Cada ponto carrega <em>tempo, afeto</em> e intenção.</h2>
+        <p class="reveal">O Lê Crochê nasceu de uma agulha herdada da avó e virou um ateliê dedicado ao slow fashion. Aqui não existe linha de produção: existe uma artesã, uma ideia e o tempo que cada peça pede para ficar perfeita.</p>
+        <p class="reveal">Trabalhamos com fios de algodão certificado, tingimentos de baixo impacto e embalagens sem plástico. Porque o que é feito à mão merece durar muito.</p>
+        <a href="#encomenda" class="link-arrow reveal">Conheça nosso processo <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- Processo -->
+    <section class="section process">
+      <header class="section__head reveal">
+        <p class="eyebrow">Do fio à sua casa</p>
+        <h2>O caminho de <em>cada peça</em></h2>
+      </header>
+      <ol class="process__list">
+        <li class="reveal"><span class="process__num">01</span><h3>Escolha do fio</h3><p>Selecionamos algodões e fios naturais macios, resistentes e respiráveis.</p></li>
+        <li class="reveal"><span class="process__num">02</span><h3>Ponto a ponto</h3><p>Cada peça é tecida à mão — algumas levam mais de 20 horas para nascer.</p></li>
+        <li class="reveal"><span class="process__num">03</span><h3>Acabamento</h3><p>Forros, alças e detalhes finalizados com cuidado de alta costura.</p></li>
+        <li class="reveal"><span class="process__num">04</span><h3>Embalagem afetiva</h3><p>Chega em caixa kraft, papel de seda e um bilhetinho escrito à mão.</p></li>
+      </ol>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+      <div class="testimonials__inner">
+        <p class="eyebrow eyebrow--light reveal">Quem usa, ama</p>
+        <div class="quotes" id="quotes">
+          <blockquote class="quote is-active">
+            <p>“A bolsa é ainda mais linda pessoalmente. Dá pra sentir o cuidado em cada detalhe — virou minha peça favorita.”</p>
+            <cite>Mariana S. · São Paulo</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Encomendei a manta para o quarto da minha filha e chorei quando abri a caixa. Que trabalho perfeito!”</p>
+            <cite>Juliana R. · Belo Horizonte</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“O cropped veste muito bem e recebo elogio toda vez que uso. Atendimento impecável do início ao fim.”</p>
+            <cite>Camila T. · Recife</cite>
+          </blockquote>
+        </div>
+        <div class="quotes__dots" id="quoteDots">
+          <button class="is-active" aria-label="Depoimento 1"></button>
+          <button aria-label="Depoimento 2"></button>
+          <button aria-label="Depoimento 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Encomenda -->
+    <section class="section custom" id="encomenda">
+      <div class="custom__card reveal">
+        <div class="custom__text">
+          <p class="eyebrow">Sob encomenda</p>
+          <h2>Sonhou com uma peça? <em>A gente cria.</em></h2>
+          <p>Cores, tamanhos, iniciais bordadas, presentes de casamento, kits de maternidade… Conte sua ideia e receba um orçamento em até 24h.</p>
+        </div>
+        <form class="custom__form" id="customForm">
+          <label>Seu nome<input name="nome" required placeholder="Como podemos te chamar?" /></label>
+          <label>Tipo de peça
+            <select name="tipo">
+              <option>Bolsa</option><option>Roupa</option><option>Amigurumi</option><option>Peça para casa</option><option>Presente / Kit</option><option>Outro</option>
+            </select>
+          </label>
+          <label class="full">Conte sua ideia<textarea name="ideia" rows="3" required placeholder="Cores, tamanho, prazo, ocasião…"></textarea></label>
+          <button class="btn btn--primary full" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section insta">
+      <header class="section__head reveal">
+        <p class="eyebrow">@atelielecroche</p>
+        <h2>Siga o <em>ateliê</em></h2>
+      </header>
+      <div class="insta__grid" id="instaGrid"></div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="perks">
+      <div class="perk"><span>✦</span><div><strong>Frete grátis</strong><small>acima de R$ 299</small></div></div>
+      <div class="perk"><span>✦</span><div><strong>6x sem juros</strong><small>no cartão de crédito</small></div></div>
+      <div class="perk"><span>✦</span><div><strong>Troca fácil</strong><small>em até 7 dias</small></div></div>
+      <div class="perk"><span>✦</span><div><strong>Compra segura</strong><small>Pix, cartão e boleto</small></div></div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo-claro.png" alt="Ateliê Lê Crochê" class="footer__logo" />
+        <p>Crochê autoral feito à mão, com fios naturais e tempo de sobra para cada detalhe.</p>
+      </div>
+      <form class="newsletter" id="newsletter">
+        <h3>Receba lançamentos em primeira mão</h3>
+        <p>As peças são únicas e esgotam rápido. Entre para a lista.</p>
+        <div class="newsletter__row">
+          <input type="email" required placeholder="seu@email.com" aria-label="E-mail" />
+          <button class="btn btn--light" type="submit">Quero!</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer__cols">
+      <div><h4>Loja</h4><a href="#colecao">Coleção</a><a href="#categorias">Categorias</a><a href="#encomenda">Sob encomenda</a></div>
+      <div><h4>Ajuda</h4><a href="#">Cuidados com a peça</a><a href="#">Trocas e devoluções</a><a href="#">Prazos de entrega</a></div>
+      <div><h4>Contato</h4><a href="#" data-whats>WhatsApp</a><a href="#">Instagram</a><a href="#">contato@atelielecroche.com.br</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Ateliê Lê Crochê. Feito à mão com amor.</span>
+      <span class="pay">Pix · Visa · Master · Elo · Boleto</span>
+    </div>
+  </footer>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Sacola -->
+  <aside class="drawer" id="cart" aria-label="Sacola de compras">
+    <div class="drawer__head">
+      <h3>Sua sacola</h3>
+      <button class="icon-btn" id="cartClose" aria-label="Fechar sacola">✕</button>
+    </div>
+    <div class="ship-bar">
+      <p id="shipMsg">Faltam <strong>R$ 299,00</strong> para frete grátis</p>
+      <div class="ship-bar__track"><span id="shipProgress"></span></div>
+    </div>
+    <ul class="drawer__items" id="cartItems"></ul>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Subtotal</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <small>ou até 6x sem juros · frete calculado no checkout</small>
+      <button class="btn btn--primary full" id="checkoutBtn">Finalizar pedido</button>
+    </div>
+  </aside>
+
+  <!-- Quick view -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <button class="icon-btn modal__close" id="modalClose" aria-label="Fechar">✕</button>
+    <div class="modal__body" id="modalBody"></div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
